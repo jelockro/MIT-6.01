@@ -1,0 +1,8 @@
+example 1.21 
+MIT OCW 6.01 SC Object-Oriented Programming
+01-05-2018
+
+How can we get electrical signals to relate to the physical phenomenn of light readings and robot wheel rotations?
+
+Using photo sensors that relay information of intensity.  Based on the intensity of the light, the robot will move its wheels to a state.  If the state is one of increased intensity the robot will continue in that state.  If not, the robot will change its state to a new one.  We should calibrate the sensor so we know the digital output when the sensor is at a certain position away from the lightbulb.  As the robot changes it's state it checks to see if it has the sensor reading is equal to this calibrated readout.  If so the robot stops moving and is finished.
+

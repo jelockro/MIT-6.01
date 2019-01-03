@@ -1,0 +1,22 @@
+SPY problem #1MIT_601SC11_ch3
+exercise 3.17
+
+if x is greater than y return true
+
+(def (x y)(if (=(/ (- x y) (- y x)) -1) True False))
+
+but we need (/ (- x y) (- y x)) to be a recursive function.
+
+def recMult (x y) (if (= x 0) 
+
+ (if (= (- y x) 0) True False) (recMult (- y x) y))
+
+easiest use case is if x is larger (1 > 0), so that x goes in as input, y +1 goes in as input, compares if x = y+1; x keeps decreasing as it gets to the test case of x = y+1. However, if x is less than y it never will reach that use case and so needs to stop at 0. 
+
+
+if x == 0;
+	return nil
+if x == y + 1 then true;
+	else x  = x -1;
+
+(def (x y)(if (= x (+ y 1)) T (if (= x 0) nil function (- x 1 y) 
